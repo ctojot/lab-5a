@@ -90,7 +90,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
   let firstSum = sum(num1, num2)[0];
   let finalSum = sum(firstSum, num3)[0];
-  let myStr = `${num1}, ${num2}, ${num3} was passed in as an array of numbers, and ${finalSum} is their sum.`;
+  let myStr = `${num1},${num2},${num3} was passed in as an array of numbers, and ${finalSum} is their sum.`;
   return [finalSum, myStr];
 }
 
