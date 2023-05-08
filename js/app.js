@@ -54,12 +54,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  let mySum = sum(a, b, c);
-  let myProd = multiply(a, b, c);
-  let myStr = `${a} and ${b} and ${c} sum to ${mySum}.`;
-  let myStr2 = `The product of ${a} and ${b} and ${c} is ${myProd}.`;
+  let mySum = sum(a, b)[0];
+  let mySum2 = sum(mySum, c)[0];
+  let myProd = multiply(a, b)[0];
+  let myProd2 = multiply(myProd ,c)[0];
+  let myStr = `${a} and ${b} and ${c} sum to ${mySum2}.`;
+  let myStr2 = `The product of ${a} and ${b} and ${c} is ${myProd2}.`;
   
-  return [mySum, myProd, myStr, myStr2];
+  return [mySum2, myProd2, myStr, myStr2];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
